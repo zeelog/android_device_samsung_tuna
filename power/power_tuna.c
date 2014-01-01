@@ -109,7 +109,7 @@ static int boostpulse_open(struct tuna_power_module *tuna)
         if (tuna->boostpulse_fd < 0) {
             if (!tuna->boostpulse_warned) {
                 strerror_r(errno, buf, sizeof(buf));
-                ALOGE("Error opening %s: %s\n", BOOSTPULSE_PATH, buf);
+                /*ALOGE("Error opening %s: %s\n", BOOSTPULSE_PATH, buf);*/
                 tuna->boostpulse_warned = 1;
             }
         }
