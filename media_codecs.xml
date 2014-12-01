@@ -197,4 +197,5 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
     </Encoders>
     <!-- STARGO: end Netflix hack -->
+    <Include href="media_codecs_ffmpeg.xml" />
 </MediaCodecs>
