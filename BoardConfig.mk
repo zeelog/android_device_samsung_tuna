@@ -33,6 +33,9 @@ TARGET_BOOTLOADER_BOARD_NAME := tuna
 #Charging LED
 TARGET_USE_CHARGING_LED := true
 
+# CMHW
+BOARD_HARDWARE_CLASS := $(DEVICE_FOLDER)/cmhw
+
 # We're now a unified build, but this wasn't always the case.
 TARGET_OTA_ASSERT_DEVICE := tuna,,maguro,toro,toroplus
 

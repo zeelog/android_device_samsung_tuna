@@ -87,6 +87,12 @@ on fs
 on charger
     mount ext4 /dev/block/platform/omap/omap_hsmmc.0/by-name/system /system ro
 
+	# CMHW permissions
+	# Adaptive backlight
+	chmod 0666 /sys/class/backlight/s6e8aa0/acl_set
+	# Gamma
+	chmod 0666 /sys/devices/platform/omapdss/manager0/gamma
+
 on property:persist.sys.tuna.off_mode=*
     write /d/pm_debug/enable_off_mode ${persist.sys.tuna.off_mode}
 
