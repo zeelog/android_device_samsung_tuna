@@ -213,6 +213,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	dumpdcc
 
+# Doze
+PRODUCT_PACKAGES += \
+	DozeService
+
 # cdma is for toro and toroplus, gsm is for maguro.
 # the ones not applicable to the device will be removed on first boot-up.
 PRODUCT_COPY_FILES += \
