@@ -233,6 +233,9 @@ on property:dev.bootcomplete=1
     # Symlink directories to access telephony.db required by RIL
     symlink /data/user_de/0/com.android.providers.telephony/databases /data/data/com.android.providers.telephony/databases
 
+    # Set BFQ I/O Scheduler after boot complete
+    setprop sys.io.scheduler "bfq"
+
 # Allow writing to the kernel trace log. Enabling tracing still requires root.
 on property:ro.debuggable=1
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
