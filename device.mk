@@ -85,6 +85,13 @@ endif
 PRODUCT_COPY_FILES += \
 	$(DEVICE_FOLDER)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+# Snap support
+PRODUCT_PACKAGES += \
+	Snap
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	camera.qcom.misc.disable=1
+
 # Symlinks
 PRODUCT_PACKAGES += \
 	libpn544_fw.so \
