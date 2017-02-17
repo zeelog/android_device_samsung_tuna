@@ -35,7 +35,7 @@ TARGET_OTA_ASSERT_DEVICE := tuna,,maguro,toro,toroplus
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME)
+BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := tuna_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/tuna
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
