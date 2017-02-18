@@ -68,10 +68,6 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 # Disable journaling on system.img to save space.
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 
-# Pre-optimize the boot image
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_BOOT_IMG_ONLY := true
-
 # Wifi
 BOARD_WLAN_DEVICE                := bcmdhd
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
