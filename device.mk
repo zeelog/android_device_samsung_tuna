@@ -135,6 +135,11 @@ PRODUCT_PACKAGES += \
 	LiveWallpapersPicker \
 	librs_jni
 
+# Low-RAM optimizations
+ADDITIONAL_BUILD_PROPERTIES += \
+	config.disable_atlas=true \
+        dalvik.vm.dex2oat-flags=--no-watch-dog
+
 # Key maps
 PRODUCT_COPY_FILES += \
 	$(DEVICE_FOLDER)/keymap/tuna-gpio-keypad.kl:system/usr/keylayout/tuna-gpio-keypad.kl \
