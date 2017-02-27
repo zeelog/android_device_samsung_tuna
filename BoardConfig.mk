@@ -36,6 +36,9 @@ TARGET_USE_CHARGING_LED := true
 # CMHW
 BOARD_HARDWARE_CLASS := $(DEVICE_FOLDER)/cmhw
 
+# healthd
+BACKLIGHT_PATH := "/sys/class/backlight/s6e8aa0/brightness"
+
 # We're now a unified build, but this wasn't always the case.
 TARGET_OTA_ASSERT_DEVICE := tuna,,maguro,toro,toroplus
 
