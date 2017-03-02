@@ -114,3 +114,8 @@ USE_DEVICE_SPECIFIC_SENSORS := true
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/rootdir/fstab.tuna
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+
+# TWRP Support - Optional
+ifeq ($(WITH_TWRP),true)
+-include device/samsung/tuna/twrp.mk
+endif

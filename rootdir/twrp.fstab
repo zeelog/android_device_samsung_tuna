@@ -1,0 +1,13 @@
+# mount point	fstype		device
+
+/system		auto		/dev/block/platform/omap/omap_hsmmc.0/by-name/system
+/cache		auto		/dev/block/platform/omap/omap_hsmmc.0/by-name/cache
+/data		ext4		/dev/block/platform/omap/omap_hsmmc.0/by-name/userdata		flags=encryptable=/dev/block/platform/omap/omap_hsmmc.0/by-name/metadata
+/misc 		emmc 		/dev/block/platform/omap/omap_hsmmc.0/by-name/misc
+/boot		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/boot
+/recovery	emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/recovery
+/sbl		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/sbl
+/xloader	emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/xloader
+/radio		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/radio
+/efs		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/efs		flags=display="EFS";backup=1
+/usb-otg	vfat		/dev/block/sda1							flags=display="USB OTG";storage;wipeingui;removable
