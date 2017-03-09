@@ -2,3 +2,4 @@
 allow zygote init:unix_stream_socket { read write getattr listen getopt setopt accept };
 allow zygote init:fifo_file { read write };
 allow zygote servicemanager:binder { call transfer };
+allow zygote self:capability sys_nice;
