@@ -11,3 +11,6 @@ allow init kernel:system module_request;
 
 # debugfs
 allow init debugfs:file rw_file_perms;
+
+# For zRAM
+allow init ram_device:blk_file rw_file_perms;
