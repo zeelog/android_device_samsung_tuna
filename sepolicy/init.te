@@ -10,4 +10,4 @@ allow init tmpfs:lnk_file create;
 allow init kernel:system module_request;
 
 # debugfs
-allow init debugfs:file write;
+allow init debugfs:file rw_file_perms;
