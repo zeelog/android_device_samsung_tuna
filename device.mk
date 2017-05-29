@@ -204,9 +204,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-PRODUCT_PACKAGES += \
-	com.android.future.usb.accessory
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
 	e2fsck \
