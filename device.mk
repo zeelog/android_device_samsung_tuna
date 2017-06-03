@@ -143,7 +143,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	LiveWallpapers \
 	LiveWallpapersPicker \
-	librs_jni
 
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
