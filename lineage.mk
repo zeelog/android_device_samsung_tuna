@@ -18,8 +18,8 @@
 PRODUCT_RELEASE_NAME := GN-GSM
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 720
+TARGET_SCREEN_WIDTH := 480
 
 # Since the first thing in PRODUCT_COPY_FILES takes precedence, organize some 'overrides' like this.
 $(call inherit-product, device/samsung/tuna/overrides.mk)
