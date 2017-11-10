@@ -191,8 +191,6 @@ def TunaVariantSetup(info):
   info.script.AppendExtra('''if (tuna.get_variant() == "toro") then (
   rename("/system/vendor/toro/build.prop", "/system/vendor/build.prop");
   symlink("bcmdhd.toro.cal", "/system/etc/wifi/bcmdhd.cal");
-  symlink("../toro/lib/libims.so", "/system/vendor/lib/libims.so");
-  symlink("../toro/lib/libims_jni.so", "/system/vendor/lib/libims_jni.so");
   symlink("../toro/lib/libsec-ril_lte.so", "/system/vendor/lib/libsec-ril.so");
   delete("/system/etc/wifi/bcmdhd.toroplus.cal");
   delete("/system/vendor/toroplus/build.prop");
