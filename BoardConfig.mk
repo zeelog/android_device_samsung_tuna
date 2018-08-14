@@ -67,9 +67,6 @@ TI_CAMERAHAL_INTERFACE := OMX
 DOMX_TUNA := true
 TI_CAMERAHAL_MAX_CAMERAS_SUPPORTED := 2
 
-# set if the target supports FBIO_WAITFORVSYNC
-TARGET_HAS_WAITFORVSYNC := true
-
 # device-specific extensions to the updater binary
 TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_tuna
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_FOLDER)
@@ -100,7 +97,6 @@ WIFI_DRIVER_FW_PATH_AP           := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 WIFI_BAND                        := 802_11_ABG
 
 # Bluetooth
-BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_FOLDER)/bluetooth
 
